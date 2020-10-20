@@ -12,6 +12,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/movies', require('./routes/movieRoutes'));
+
 const port = 3002;
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
