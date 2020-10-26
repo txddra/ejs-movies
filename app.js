@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/ejs', require('./routes/movieRoutes'));
 
-const port = 3002;
+const port = 3008;
 
 
 app.listen(port, () => {
