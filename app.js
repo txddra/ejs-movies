@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-require('dotenv').config();
+
+
 //set the view for express
 app.set('view engine', 'ejs');
 //views are located
@@ -19,5 +20,5 @@ const port = 3002;
 
 
 app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
+console.log(`Listening on port ${port}`);
 });
