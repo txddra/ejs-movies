@@ -9,11 +9,11 @@
 <body>
     
     <h1>Movies Now Playing</h1>
-    <img src="<%= `https://image.tmdb.org/t/p/w200/${item.poster_path}`%>"/>
-    <% movies.forEach((item)=>{ %>
+    <img src="<%= `https://image.tmdb.org/t/p/w200/${myData.poster_path}`%>"/>
+    <% myData.forEach((item)=>{ %>
            <ul>
-    <li><%= movie.title  %> </li>
-        <li><%= movie.overview%></li>
+    <li><%= item.title  %> </li>
+        <li><%= item.overview%></li>
         <%  }) %> 
     </ul>
     </body> 

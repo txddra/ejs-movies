@@ -23,7 +23,8 @@ router.get('/movies', (req, res) => {
             
             let myData = movieResults.data.results;
             return res.render('main/movies', {
-                myData: myData
+                myData: myData,
+                
             })
         })
 });
