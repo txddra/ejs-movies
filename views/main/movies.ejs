@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css"
-    <title>Movies now playing</title>
+   <%-include('../partials/head')%>
 </head>
 <body>
-    
-    <h1>Movies Now Playing</h1>
+ <%-include('../partials/header')   
+ 
     <img src="<%= `https://image.tmdb.org/t/p/w200/${myData.poster_path}`%>"/>
     <% myData.forEach((item)=>{ %>
            <ul>
@@ -17,4 +14,5 @@
         <%  }) %> 
     </ul>
     </body> 
+    
 </html>
